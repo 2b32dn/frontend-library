@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+body {
+  background: #131316;
+  color: #fff;
+  margin: 0 auto;
+  padding: 5rem 2rem 5rem 2rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (min-width: 1440px){
+  img {
+    max-width: 60rem;
+  }
+}
+
+
+article {
+  display: grid;
+  place-content: center;
+  align-items: center;
+  margin: 10rem 0;
+}
+
+section {
+  margin-top: 2rem;
+  min-height: 100vh;
+}
+
+
+h1,h2, p,li {
+  animation: fade-on-scroll linear both;
+  animation-timeline: view(block);
+  animation-range: contain 0% cover 50%;
+}
+
+@keyframes fade-on-scroll {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
