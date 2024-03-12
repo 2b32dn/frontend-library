@@ -44,6 +44,11 @@ caption {
 
 th {
   background:hsl( 0 0% 0% / 0.5);
+  vertical-align: text-bottom;
+}
+
+td {
+  vertical-align: text-top;
 }
 
 tr:nth-of-type(2n) {
