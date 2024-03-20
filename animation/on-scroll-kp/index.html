@@ -6,15 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>On-Scroll Animation</title>
   <link rel="stylesheet" href="./assets/styles.css">
-  <script defer src="./app.js"></script>
+  <script defer src="./assets/script.js"></script>
+  <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+  <!-- Firefox compatibility -->
 </head>
 
 <body>
   <div class="scroll-watcher"></div>
+  <header>
+    <div class="header-container">
+      <h1 class="header-h1">
+        CSS-only Scroll-driven animations
+      </h1>
+      <p class="header-p">
+        Seki was located where the two highways of Tokaido and Ise meet on their way to the imperial capital, Kyoto. On
+        a
+        snowy day, a few travelers pass the torii gate, probably marking the pilgrim's route to Ise. Rendered in a range
+        of white and grayish blue, with only a few accents of red, the color scheme tightens the composition. By
+        contrast,
+        the scene of Seki in the Hoeido series represents a daimyo procession leaving the inn still in the dark.
+      </p>
+    </div>
+    <img class="header-img"
+      src="https://cdn.visualwilderness.com/wp-content/uploads/2021/09/2019_02_HockingHills_456-Edit.jpg"
+      alt="Seki by Hiroshige" />
+  </header>
   <h1>On Hail Lorem Ipsum</h1>
   <section>
     <figure>
-      <img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/37242/131382/main-image"
+      <img class="animated-img" src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/37242/131382/main-image"
         alt="Seki by Hiroshige" />
       <figcaption>
         Seki by Hiroshige
@@ -75,7 +95,7 @@
       quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
       ultricies mi vitae est. Mauris placerat eleifend leo.</p>
     <figure>
-      <img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/37242/131382/main-image"
+      <img class="animated-img" src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/37242/131382/main-image"
         alt="Seki by Hiroshige" />
       <figcaption>
         Seki by Hiroshige
@@ -138,7 +158,160 @@
       </li>
     </ul>
     <figure>
-      <img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/37242/131382/main-image"
+      <img class="animated-img" src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/37242/131382/main-image"
+        alt="Seki by Hiroshige" />
+      <figcaption>
+        Seki by Hiroshige
+      </figcaption>
+    </figure>
+    <p>
+      Seki was located where the two highways of Tokaido and Ise meet on their way to the imperial capital, Kyoto. On a
+      snowy day, a few travelers pass the torii gate, probably marking the pilgrim's route to Ise. Rendered in a range
+      of white and grayish blue, with only a few accents of red, the color scheme tightens the composition. By contrast,
+      the scene of Seki in the Hoeido series represents a daimyo procession leaving the inn still in the dark.
+    </p>
+  </article>
+  <div class="scroller" data-direction="left" data-duration="fast">
+    <ul class="scroller__container">
+      <li class="scroller__item">
+        <div class="scroller__item-container">
+          <img class="scroller__item-img" src="https://placehold.co/600x400/teal/white" alt="">
+        </div>
+      </li>
+      <li class="scroller__item">
+        <div class="scroller__item-container">
+          <img class="scroller__item-img" src="https://placehold.co/600x400/coral/white" alt="">
+        </div>
+      </li>
+      <li class="scroller__item">
+        <div class="scroller__item-container">
+          <img class="scroller__item-img" src="https://placehold.co/600x400/lightblue/white" alt="">
+        </div>
+      </li>
+      <li class="scroller__item">
+        <div class="scroller__item-container">
+          <img class="scroller__item-img" src="https://placehold.co/600x400/slateblue/white" alt="">
+        </div>
+      </li>
+      <li class="scroller__item">
+        <div class="scroller__item-container">
+          <img class="scroller__item-img" src="https://placehold.co/600x400/red/white" alt="">
+        </div>
+      </li>
+    </ul>
+  </div>
+  <article class="hidden">
+    <h2>Vanilla CSS Scroll</h2>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
+      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+      ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+      Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
+      condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
+      eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+    <ul>
+      <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+      <li>Aliquam tincidunt mauris eu risus.</li>
+      <li>Vestibulum auctor dapibus neque.</li>
+    </ul>
+    <h2>Vanilla CSS Scroll 2</h2>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
+      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+      ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+      Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
+      condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
+      eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+    </p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
+      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+      ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+      Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
+      condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
+      eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+    </p>
+    <ul>
+      <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed
+        arcu. Cras consequat.</li>
+      <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
+        Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+      <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique
+        cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+      <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
+      </li>
+    </ul>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
+      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+      ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
+      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+      ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    <figure>
+      <img class="animated-img" src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/37242/131382/main-image"
+        alt="Seki by Hiroshige" />
+      <figcaption>
+        Seki by Hiroshige
+      </figcaption>
+    </figure>
+    <p>
+      Seki was located where the two highways of Tokaido and Ise meet on their way to the imperial capital, Kyoto. On a
+      snowy day, a few travelers pass the torii gate, probably marking the pilgrim's route to Ise. Rendered in a range
+      of white and grayish blue, with only a few accents of red, the color scheme tightens the composition. By contrast,
+      the scene of Seki in the Hoeido series represents a daimyo procession leaving the inn still in the dark.
+    </p>
+    <h2>Vanilla CSS Scroll 3</h2>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
+      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+      ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+      Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
+      condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
+      eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
+      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+      ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+      Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
+      condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
+      eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+    <ul>
+      <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed
+        arcu. Cras consequat.</li>
+      <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
+        Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+      <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique
+        cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+      <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
+      </li>
+    </ul>
+    <h2>Vanilla CSS Scroll 4</h2>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
+      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+      ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+      Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
+      condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
+      eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
+      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+      ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+      Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
+      condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
+      eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+    <ul>
+      <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed
+        arcu. Cras consequat.</li>
+      <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
+        Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+      <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique
+        cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+      <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
+      </li>
+    </ul>
+    <figure>
+      <img class="animated-img" src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/37242/131382/main-image"
         alt="Seki by Hiroshige" />
       <figcaption>
         Seki by Hiroshige
@@ -199,7 +372,7 @@
       quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
       ultricies mi vitae est. Mauris placerat eleifend leo.</p>
     <figure>
-      <img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/37242/131382/main-image"
+      <img class="animated-img" src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/37242/131382/main-image"
         alt="Seki by Hiroshige" />
       <figcaption>
         Seki by Hiroshige
@@ -262,131 +435,7 @@
       </li>
     </ul>
     <figure>
-      <img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/37242/131382/main-image"
-        alt="Seki by Hiroshige" />
-      <figcaption>
-        Seki by Hiroshige
-      </figcaption>
-    </figure>
-    <p>
-      Seki was located where the two highways of Tokaido and Ise meet on their way to the imperial capital, Kyoto. On a
-      snowy day, a few travelers pass the torii gate, probably marking the pilgrim's route to Ise. Rendered in a range
-      of white and grayish blue, with only a few accents of red, the color scheme tightens the composition. By contrast,
-      the scene of Seki in the Hoeido series represents a daimyo procession leaving the inn still in the dark.
-    </p>
-  </article>
-  <article class="hidden">
-    <h2>Vanilla CSS Scroll</h2>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-      ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
-      Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
-      condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
-      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
-      eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <ul>
-      <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-      <li>Aliquam tincidunt mauris eu risus.</li>
-      <li>Vestibulum auctor dapibus neque.</li>
-    </ul>
-    <h2>Vanilla CSS Scroll 2</h2>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-      ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
-      Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
-      condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
-      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
-      eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
-    </p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-      ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
-      Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
-      condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
-      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
-      eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
-    </p>
-    <ul>
-      <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed
-        arcu. Cras consequat.</li>
-      <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
-        Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
-      <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique
-        cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
-      <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
-      </li>
-    </ul>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-      ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-      ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-    <figure>
-      <img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/37242/131382/main-image"
-        alt="Seki by Hiroshige" />
-      <figcaption>
-        Seki by Hiroshige
-      </figcaption>
-    </figure>
-    <p>
-      Seki was located where the two highways of Tokaido and Ise meet on their way to the imperial capital, Kyoto. On a
-      snowy day, a few travelers pass the torii gate, probably marking the pilgrim's route to Ise. Rendered in a range
-      of white and grayish blue, with only a few accents of red, the color scheme tightens the composition. By contrast,
-      the scene of Seki in the Hoeido series represents a daimyo procession leaving the inn still in the dark.
-    </p>
-    <h2>Vanilla CSS Scroll 3</h2>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-      ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
-      Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
-      condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
-      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
-      eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-      ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
-      Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
-      condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
-      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
-      eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <ul>
-      <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed
-        arcu. Cras consequat.</li>
-      <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
-        Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
-      <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique
-        cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
-      <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
-      </li>
-    </ul>
-    <h2>Vanilla CSS Scroll 4</h2>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-      ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
-      Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
-      condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
-      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
-      eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-      quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-      ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
-      Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
-      condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
-      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
-      eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <ul>
-      <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed
-        arcu. Cras consequat.</li>
-      <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
-        Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
-      <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique
-        cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
-      <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
-      </li>
-    </ul>
-    <figure>
-      <img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/37242/131382/main-image"
+      <img class="animated-img" src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/37242/131382/main-image"
         alt="Seki by Hiroshige" />
       <figcaption>
         Seki by Hiroshige
