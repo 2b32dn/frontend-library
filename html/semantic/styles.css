@@ -1,0 +1,80 @@
+h1 {
+  border: 2px solid red;
+  padding: 2px;
+}
+
+h2 {
+  border: 2px solid orange;
+  padding: 2px;
+}
+
+h3 {
+  border: 2px solid yellow;
+  padding: 2px;
+}
+
+h4 {
+  border: 2px solid green;
+  padding: 2px;
+}
+
+h5 {
+  border: 2px solid blue;
+  padding: 2px;
+}
+
+h6 {
+  border: 2px solid purple;
+  padding: 2px;
+}
+
+
+header {
+  border: 2px solid green;
+  padding: 2px;
+}
+
+nav {
+  border: 2px solid orchid;
+  padding: 2px;
+}
+
+ul {
+  border: 2px solid goldenrod;
+  padding: 2px;
+}
+
+li {
+  border: 2px solid palegreen;
+  padding: 2px;
+}
+
+div {
+  border: 2px solid indianred;
+  padding: 2px;
+}
+
+span {
+  border: 2px solid slateblue;
+  padding: 2px;
+}
+
+article {
+  border: 2px solid salmon;
+  padding: 2px;
+}
+
+time {
+  border: 2px solid magenta;
+  padding: 2px;
+}
+
+p {
+  border: 2px solid darkolivegreen;
+  padding: 2px;
+}
+
+footer {
+  border: 2px solid darkblue;
+  padding: 2px;
+}
